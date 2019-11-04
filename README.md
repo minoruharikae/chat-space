@@ -23,7 +23,6 @@ Things you may want to cover:
 
 * ...
 
-
 # chat-space DB設計
 ## usersテーブル
 |Column|Type|Options|
@@ -34,7 +33,8 @@ Things you may want to cover:
 ### Association
 - has_many :messages
 - has_many :groups_users
-- has_many :groups, through: groups_users  
+- has_many  :groups,  through: groups_users
+
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -63,5 +63,5 @@ Things you may want to cover:
 |group_id|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
-- belongs_to :user
--
+
+
