@@ -4,5 +4,5 @@ class GroupUser < ApplicationRecord
 
 end
 
-end
+
 
