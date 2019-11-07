@@ -74,4 +74,5 @@ ActiveRecord::Schema.define(version: 20191103092424) do
   add_foreign_key "messages", "users"
 
 
+ end
 end
