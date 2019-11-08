@@ -1,7 +1,6 @@
 $(function(){
   $("#new_message").on("submit", function(e){
     e.preventDefault()
-     console.log('イベント発火');
 
      var url = $(this).attr('action');
      var formdata = new FormData(this);
@@ -30,6 +29,7 @@ $(function(){
   })
 
   function buildHTML(message){
+    var img = message.image  ? `<img src =  "${ message.image }">` : "";
     var html = `<div class="message">
                   <div class="upper-message">
                       <div class="upper-message__user-name">
@@ -43,6 +43,7 @@ $(function(){
                       <p class="lower-message__content">
                           ${ message.content }
                       </p>
+                       ${img}
                   </div>
                </div>`
         return html; 
