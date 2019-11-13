@@ -36,8 +36,8 @@
   .messages {
     background-color: #FAFAFA;
     box-sizing: border-box;
-    padding: 46px 40px 0;
-    height: calc(100% - 100px - 90px);
+    padding: 46px 40px;
+    height: calc(100vh - 190px);
     overflow: scroll;
     .message {
       .upper-message {
@@ -68,8 +68,10 @@
     background-color: #DDDDDD;
     box-sizing: border-box;
     height: 90px;
-    padding: 20px 50px 20px 40px;
+    padding: 20px 40px;
     margin: o auto;
+    position: fixed;
+    width: calc(100vw - 290px);
     &__message {
       border: none;
       float: left;

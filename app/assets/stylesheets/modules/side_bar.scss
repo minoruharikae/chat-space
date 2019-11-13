@@ -14,6 +14,7 @@
     }
     &__lists {
       display: inline-block;
+      padding-left: 95px;
       .list {
         display: inline-block;
       }
@@ -29,12 +30,14 @@
     height: calc(100% - 100px);
     padding: 0 20px;
     overflow: scroll;
+    
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
       
      a {
        color: white;
+       text-decoration: none;
      }
       &__name {
         font-size: $side_group_name;
