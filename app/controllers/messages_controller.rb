@@ -6,6 +6,8 @@ class MessagesController < ApplicationController
     @messages = @group.messages.includes(:user)
   end
 
+  
+
   def create
     @message = @group.messages.new(message_params)
     if @message.save
@@ -29,4 +31,6 @@ class MessagesController < ApplicationController
   def set_group
     @group = Group.find(params[:group_id])
   end
+
+  
 end

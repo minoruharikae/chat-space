@@ -67,8 +67,12 @@ $(function(){
         var html =  buildMessageHTML(message);
         $('.messages').append(html);
         $('.form__message').val('');
+        //$('#message_image').val('');
+        $('#new_message')[0].reset();
         $('.form__submit').prop('disabled', false);
+        
         $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+        
       })
       .fail(function(){
         alert('error')
@@ -77,7 +81,6 @@ $(function(){
 
     });
        
-
-  setInterval(reloadMessages, 5000);
+  setInterval(reloadMessages, 7000);
 })
 
